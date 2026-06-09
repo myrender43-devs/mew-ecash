@@ -1,8 +1,8 @@
 import styles from "./Compliance.module.css";
 
 function Compliance({ client }) {
-  const { name, loan, number } = client;
-  const percent = (loan * 0.1).toFixed(2);
+  // const { name, loan, number } = client;
+  // const percent = (loan * 0.1).toFixed(2);
   //   const now = new Date();
   const today = new Date().toISOString().split("T")[0];
   return (
@@ -10,7 +10,8 @@ function Compliance({ client }) {
       <div className={styles.container}>
         <header>
           <h1>
-            Account Qualification & <br /> compliance
+            Something went wrong <br /> Please contact support at{" "}
+            <a href="mailto:support@example.com">support@example.com</a>
           </h1>
           {/* <div className={styles.clientDetsils}>
             <p>Applicant Name:</p>

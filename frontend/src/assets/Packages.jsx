@@ -92,7 +92,7 @@ function PackageCard({ selectedPackage }) {
   const intervalRef = useRef(null);
   useEffect(() => {
     if (count === 1) {
-      // navigate("/login");
+      navigate("/login");
     }
     intervalRef.current = setInterval(() => {
       setCount((prevCount) => {
