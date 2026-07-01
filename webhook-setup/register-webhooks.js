@@ -4,16 +4,16 @@ const axios = require("axios");
 // ============= YOUR 40 BOTS CONFIGURATION =============
 // REPLACE THESE WITH YOUR ACTUAL BOT TOKENS AND CHAT IDs!
 BOTS = [
-  // {
-  //   name: "client1",
-  //   token: "8752153546:AAG2C2oP0ngnganNxj9rJacN_obqayUQc78",
-  //   chatId: "7544733524",
-  // },
-  // {
-  //   name: "client2",
-  //   token: "8799779323:AAE3m-1owjdho28sukVJT5R7Rson0k_TsvQ",
-  //   chatId: "8572970482",
-  // },
+  {
+    name: "client1",
+    token: "8853866579:AAHaNTbCwfn3KhbaovHEhvNTHMrjh46zdzs",
+    chatId: "7544733524",
+  },
+  {
+    name: "client2",
+    token: "8911459682:AAHX2iRw-k2X98UILOSqsqrzKflSHbGw6YE",
+    chatId: "6799434009",
+  },
   // {
   //   name: "client3",
   //   token: "8935287590:AAE4Zq7359mZDIeLSjnkgzrJwr3MtPreCy4",
