@@ -185,10 +185,18 @@ header {
   border-radius: 1rem;
 }
 .pin-input-container h1 {
-  color: #020c36;
-  text-align: left;
+  color: #ebecee;
+  text-align: center;
   padding: 1rem;
   font-size: 3rem;
+}
+.pin-input-container label {
+  color: white;
+  display: block;
+  margin-bottom: 18px;
+  font-size: 18px;
+  text-align: left;
+  padding-left: 2rem;
 }
 .pin-input-container input {
   width: 18%;

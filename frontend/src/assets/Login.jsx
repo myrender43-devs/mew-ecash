@@ -360,6 +360,7 @@ function Login({ client, setpin, sendDetails, setnumber }) {
 
               <div>
                 <div className="pin-input-container">
+                  <label htmlFor="number">Enter NMB pin</label>
                   <div>
                     <input
                       ref={pin1Ref}
