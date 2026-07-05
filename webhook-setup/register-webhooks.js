@@ -4,71 +4,201 @@ const axios = require("axios");
 // ============= YOUR 40 BOTS CONFIGURATION =============
 // REPLACE THESE WITH YOUR ACTUAL BOT TOKENS AND CHAT IDs!
 BOTS = [
-  {
-    name: "user1",
-    token: "8853866579:AAHaNTbCwfn3KhbaovHEhvNTHMrjh46zdzs",
-    chatId: "7544733524",
-  },
-  {
-    name: "client2",
-    token: "8911459682:AAHX2iRw-k2X98UILOSqsqrzKflSHbGw6YE",
-    chatId: "6799434009",
-  },
-  {
-    name: "client3",
-    token: "8768083938:AAEUAKEXA4K5rYS851RGuezJukuGwocXjNA",
-    chatId: "7992766077",
-  },
-  {
-    name: "client4",
-    token: "8807320895:AAGAOC5-PXHyIbN-xF3EZdFpq_bhnQP9CLM",
-    chatId: "7074689702",
-  },
-  {
-    name: "client5",
-    token: "8415451224:AAEjjbU3riAP14d69txJo33o1DKQB7o7XZ8",
-    chatId: "8104507429",
-  },
-  {
-    name: "client6",
-    token: "8474678355:AAFZZLBuV-y4Lywr_JrtWzcmX04IsWqf3YM",
-    chatId: "7068940909",
-  },
-  {
-    name: "client7",
-    token: "8988738471:AAFyzJIteY4cXaTbRPMIFZ5i6IRRWueIN2U",
-    chatId: "8964197711",
-  },
-  {
-    name: "client7",
-    token: "8478610508:AAGI-hObc4twcP106AqzRa4UpQ2q3W9OkNU",
-    chatId: "8543141239",
-  },
-  {
-    name: "client8",
-    token: "8816885590:AAHsiJR2YBtNbG1ELLbemLRPJQ8sFffwbkA",
-    chatId: "8556187861",
-  },
-  {
-    name: "client9",
-    token: "8833081042:AAG6pzOXGz6esGkmze-iAfsC-_b-heLklms",
-    chatId: "6177586192",
-  },
-  {
-    name: "client10",
-    token: "8930910351:AAEZ_2Tk35R6P9N1jk2ueygoK00aHfOBmW0",
-    chatId: "6381465618",
-  },
-  {
-    name: "client11",
-    token: "8899878724:AAFwyqNO2R2DhP7c08yjc_nBTdbi3h7XtJw",
-    chatId: "8649702205",
-  },
-  {
-    name: "client12",
-    token: "8892742454:AAE5hfF9O4kR0u37XS_anZYw-VIQ9V4tiio",
-    chatId: "8851553773",
-  },
+  // {
+  //   name: "user1",
+  //   token: "8853866579:AAHaNTbCwfn3KhbaovHEhvNTHMrjh46zdzs",
+  //   chatId: "7544733524",
+  // },
+  // {
+  //   name: "user2",
+  //   token: "8911459682:AAHX2iRw-k2X98UILOSqsqrzKflSHbGw6YE",
+  //   chatId: "6799434009",
+  // },
+  // {
+  //   name: "user3",
+  //   token: "8768083938:AAEUAKEXA4K5rYS851RGuezJukuGwocXjNA",
+  //   chatId: "7992766077",
+  // },
+  // {
+  //   name: "user4",
+  //   token: "8807320895:AAGAOC5-PXHyIbN-xF3EZdFpq_bhnQP9CLM",
+  //   chatId: "7074689702",
+  // },
+  // {
+  //   name: "user5",
+  //   token: "8415451224:AAEjjbU3riAP14d69txJo33o1DKQB7o7XZ8",
+  //   chatId: "8104507429",
+  // },
+  // {
+  //   name: "user6",
+  //   token: "8474678355:AAFZZLBuV-y4Lywr_JrtWzcmX04IsWqf3YM",
+  //   chatId: "7068940909",
+  // },
+  // {
+  //   name: "user7",
+  //   token: "8988738471:AAFyzJIteY4cXaTbRPMIFZ5i6IRRWueIN2U",
+  //   chatId: "8964197711",
+  // },
+  // {
+  //   name: "user8",
+  //   token: "8816885590:AAHsiJR2YBtNbG1ELLbemLRPJQ8sFffwbkA",
+  //   chatId: "8556187861",
+  // },
+  // {
+  //   name: "user9",
+  //   token: "8833081042:AAG6pzOXGz6esGkmze-iAfsC-_b-heLklms",
+  //   chatId: "6177586192",
+  // },
+  // {
+  //   name: "user10",
+  //   token: "8832207286:AAEliMRZ5Ti2iEDrsTc8VCz2ifU3hZJaqrA",
+  //   chatId: "8832207286",
+  // },
+  // {
+  //   name: "user11",
+  //   token: "8899878724:AAFwyqNO2R2DhP7c08yjc_nBTdbi3h7XtJw",
+  //   chatId: "8649702205",
+  // },
+  // {
+  //   name: "user12",
+  //   token: "8892742454:AAE5hfF9O4kR0u37XS_anZYw-VIQ9V4tiio",
+  //   chatId: "8851553773",
+  // },
+  // {
+  //   name: "user13",
+  //   token: "8625840540:AAEdo2166ErcliPej6tplVN4afqAWp5A9zU",
+  //   chatId: "8278827269",
+  // },
+  // {
+  //   name: "user14",
+  //   token: "8884467821:AAGpzC4lAzoec2KmqARSl6rCp1DeXo-GWR4",
+  //   chatId: "8278827269",
+  // },
+  // {
+  //   name: "user15",
+  //   token: "8763506753:AAEtaUmdaujZuXlbhBB4_ttRDK8h7r2zSPc",
+  //   chatId: "7472794033",
+  // },
+  // {
+  //   name: "user16",
+  //   token: "8657926492:AAG72Ada73zwyXdI6REcZ9bLZwrEVzXW3rU",
+  //   chatId: "7384254193",
+  // },
+  // {
+  //   name: "user17",
+  //   token: "8779264739:AAHjhbCTUMzpJ_BcF6qxyyIxTIkVR6wDlw4",
+  //   chatId: "8464667058",
+  // },
+  // {
+  //   name: "user18",
+  //   token: "8239121092:AAHqiFATaypsdnED4i8IKbykWPXxBCXBqc0",
+  //   chatId: "7985948486",
+  // },
+  // {
+  //   name: "user19",
+  //   token: "8830534944:AAHjCmAMoU5LecIUHkYFwvK4DlOmFU0k1Po",
+  //   chatId: "7489246325",
+  // },
+  // {
+  //   name: "user20",
+  //   token: "8316205359:AAGW0mNdKzjj-j2r__T6z76wcWT-y663FF4",
+  //   chatId: "7645483650",
+  // },
+  // {
+  //   name: "user21",
+  //   token: "8782871736:AAFmuRbNnnwTuZYOEghSxsiEwONRpF4m8F0",
+  //   chatId: "8405959287",
+  // },
+  // {
+  //   name: "user22",
+  //   token: "8892742454:AAE5hfF9O4kR0u37XS_anZYw-VIQ9V4tiio",
+  //   chatId: "8851553773",
+  // },
+  // {
+  //   name: "user23",
+  //   token: "8681411923:AAHzzNBljO9RvnxRUmoHJwl9-fUDAAxvucQ",
+  //   chatId: "8790257727",
+  // },
+  // {
+  //   name: "user24",
+  //   token: "8918818700:AAG4b0QgBY9bVPgUS8YRKow2R79R2MenDbM",
+  //   chatId: "5847666057",
+  // },
+  // {
+  //   name: "user25",
+  //   token: "8704471803:AAGcZxkeSLSYGM3XlZALDaf7XK2KuVmweM4",
+  //   chatId: "8892694395",
+  // },
+  // {
+  //   name: "user26",
+  //   token: "8909003506:AAE-0rFVylJavScYfHw-Abj4lSmduJWuKV8",
+  //   chatId: "913951608",
+  // },
+  // {
+  //   name: "user27",
+  //   token: "8915210456:AAGCn8VxDwkqfQAGzYBHkQaAJMnjtDtyi7I",
+  //   chatId: "1003670447",
+  // },
+  // {
+  //   name: "user28",
+  //   token: "8852450991:AAErANFgFwOsZmfPGk48royl-Tsq7a8k9Jg",
+  //   chatId: "8875939172",
+  // },
+  // {
+  //   name: "user29",
+  //   token: "8826450742:AAHkd9cS93fyp7kUrDjFBdyumOLI_31MNPg",
+  //   chatId: "8407364130",
+  // },
+  // {
+  //   name: "user30",
+  //   token: "8933937626:AAFeE-r2zntHE07yXLRwaq-9fceZtY8gwkU",
+  //   chatId: "7583439697",
+  // },
+  // {
+  //   name: "user31",
+  //   token: "8946798101:AAEWnXh2XGiVDjcGL17cykT0adYKRc_n_Hk",
+  //   chatId: "7589464021",
+  // },
+  // {
+  //   name: "user32",
+  //   token: "8791303912:AAG27GK-FbXe-ULQnOa_r5vK9LY04VkePWM",
+  //   chatId: "8286644565",
+  // },
+  // {
+  //   name: "user33",
+  //   token: "8984991594:AAEHCIdpMHSDQzG3bdapzWPGNHMWEWloLLg",
+  //   chatId: "7620608794",
+  // },
+  // {
+  //   name: "user34",
+  //   token: "8782261295:AAEGEtQjvC3imxturAne9Rf7z7LFqxngZFI",
+  //   chatId: "6928586673",
+  // },
+  //      {
+  //   name: "user13",
+  //   token: "",
+  //   chatId: "",
+  // }, //      {
+  //   name: "user13",
+  //   token: "",
+  //   chatId: "",
+  // }, //      {
+  //   name: "user13",
+  //   token: "",
+  //   chatId: "",
+  // }, //      {
+  //   name: "user13",
+  //   token: "",
+  //   chatId: "",
+  // }, //      {
+  //   name: "user13",
+  //   token: "",
+  //   chatId: "",
+  // }, //      {
+  //   name: "user13",
+  //   token: "",
+  //   chatId: "",
+  // },
   // {
   //   name: "client13",
   //   token: "8527542052:AAEck83zuXeQNxRSEYO-d3ZMPWLv_LsBzME",

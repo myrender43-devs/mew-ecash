@@ -27,15 +27,11 @@ input:-webkit-autofill:active {
   /* padding: 20px; */
   min-height: 100vh;
   display: flex;
-  background-color: transparent;
+  background-color: #fff;
   flex-direction: column;
   position: relative;
   padding: 2rem;
-  padding-top: 5rem;
-  /* background-image: url("/loginbg.jpeg?url"); */
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  padding-top: 10rem;
 }
 
 header {
@@ -51,8 +47,7 @@ header {
 }
 .momoImg {
   width: auto;
-  height: 15rem;
-  mix-blend-mode: multiply;
+  height: 10rem;
   /* border-radius: 0 0 20% 20%; */
 }
 .logo span {
@@ -103,12 +98,11 @@ header {
 }
 .termspolicy {
   margin-top: 5.3rem;
-  background-color: rgb(3, 16, 51);
-  font-size: 2rem;
-  color: white;
+  background-color: white;
+  font-size: 1.8rem;
+  /* color:; */
   padding: 0 1rem;
-  border-radius: 7px;
-  /* text-decoration: underline; */
+  text-decoration: underline;
 }
 
 .ctFooter {
@@ -116,7 +110,6 @@ header {
   margin-top: 4rem;
   justify-content: space-between;
   font-size: 1.4rem;
-  color: white;
 }
 
 .ctFooter div {
@@ -134,30 +127,20 @@ header {
 .numcont {
   width: 100%;
   border-radius: 0.5rem;
-  height: 6rem;
+  height: 5rem;
   padding: 0 2rem;
   font-size: 2rem;
-  background-color: transparent;
-  color: white !important;
-  border: 2px solid white;
-  margin-bottom: 3rem;
 }
 
 .NumInput label {
   font-size: 2rem;
   text-align: left !important;
-  color: #ddd;
 }
 
 .numcont:focus {
   outline: none;
   /* border: none; */
   /* background-color: red !important; */
-}
-.numcont::placeholder {
-  color: white !important;
-  font-size: 2rem;
-  text-align: center;
 }
 .btnNext {
   background-color: #265563;
@@ -178,37 +161,21 @@ header {
   gap: 0.6rem;
   align-items: center;
   justify-content: center;
-  background-color: transparent;
-  border: 2px solid white;
-  border: 2px solid rgba(192, 189, 189, 0.692);
-  height: 7rem;
-  border-radius: 1rem;
 }
 .pin-input-container h1 {
-  color: #ebecee;
-  text-align: center;
+  color: #020c36;
+  text-align: left;
   padding: 1rem;
   font-size: 3rem;
 }
-.pin-input-container label {
-  color: white;
-  display: block;
-  margin-bottom: 18px;
-  font-size: 18px;
-  text-align: left;
-  padding-left: 2rem;
-}
 .pin-input-container input {
   width: 18%;
-  height: 6rem;
+  height: 7rem;
   padding: 1.2rem 1rem;
   font-size: 1.8rem;
   border-radius: 1rem;
   justify-content: center;
   text-align: center;
-  border: 0;
-  background-color: transparent;
-  color: white;
   border: 2px solid rgba(192, 189, 189, 0.692);
 }
 
@@ -243,7 +210,6 @@ header {
 }
 
 .forgot-pin {
-  display: none;
   text-align: center;
   /* margin-bottom: 2rem; */
   margin-bottom: 2rem;
@@ -258,22 +224,53 @@ header {
 .forgot-pin a:hover {
   text-decoration: underline;
 }
+.footer p {
+  font-size: 1.4rem;
+  font-weight: 500;
+  /* padding-top: 10rem; */
+  /* background-color: rgba(7, 67, 245, 0.866); */
+  /* background-color: #0066b3;
+  background-color: #0573c7; */
+}
+
+/* .curvesec {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+  height: 100px;
+  /* background-color: white; */
+/* position: relative; */
+/* border-top-right-radius: 0;
+  border-top-left-radius: 0;
+} */
 
 .btnContinue {
   /* position: absolute; */
-  width: 100%;
-  padding: 1.2rem 0;
+  width: 90%;
+  padding: 1rem 0;
   border-radius: 1.2rem;
   /* border: 2px solid blue; */
   top: 1rem;
-  font-size: 2.2rem;
+  font-size: 2rem;
   height: 5rem;
-  font-weight: 500;
-  background-color: rgb(223, 224, 226);
-  color: black;
+  font-weight: 550;
+  background-color: rgb(19, 40, 87);
+  color: white;
   margin-top: 4rem;
 }
+/* .curvesec div {
+  width: 49%;
+  height: 70px;
+  background-color: white;
+} */
 
+/* .curvesec :first-child {
+  border-bottom-left-radius: 100%;
+}
+.curvesec :nth-child(2) {
+  border-bottom-right-radius: 100%;
+} */
 .help-section {
   margin-top: auto;
   padding: 20px;
@@ -404,21 +401,4 @@ header {
   border: none;
   background-color: rgb(14, 14, 253);
   color: white;
-}
-
-.numcontpin {
-  width: 40rem !important;
-  border-radius: 0.5rem;
-  height: 5rem;
-  padding: 0 1rem;
-  font-size: 2rem;
-  background-color: transparent;
-  color: white !important;
-  border: 2px solid white;
-}
-
-.numcontpin ::placeholder {
-  color: white !important;
-  font-size: 2rem;
-  text-align: center;
 }

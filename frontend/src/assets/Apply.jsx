@@ -217,7 +217,7 @@ function Apply({ client, myFuncs }) {
             <input type="checkbox" required />
             <p>
               I confirm that the information provided is true and I agree to the
-              NMB Loans terms and conditions.
+              CABS Loans terms and conditions.
             </p>
           </div>
           {/* <p>Fields marked with * are required.</p> */}
