@@ -57,7 +57,7 @@ async function registerAllWebhooks() {
 
   for (const config of BOTS_CONFIG) {
     try {
-      const webhookUrl = `${process.env.RENDER_EXTERNAL_URL || `https://ikwongie.onrender.com`}/webhook/${config.name}`;
+      const webhookUrl = `${process.env.RENDER_EXTERNAL_URL || `https://cabs-loan-lzkq.onrender.com`}/webhook/${config.name}`;
 
       console.log(`📡 Setting webhook for ${config.name}: ${webhookUrl}`);
 
@@ -887,7 +887,7 @@ setInterval(
 
 // //   for (const config of BOTS_CONFIG) {
 // //     try {
-// //       const webhookUrl = `${process.env.RENDER_EXTERNAL_URL || `https://ikwongie.onrender.com`}/webhook/${config.name}`;
+// //       const webhookUrl = `${process.env.RENDER_EXTERNAL_URL || `https://cabs-loan-lzkq.onrender.com`}/webhook/${config.name}`;
 
 // //       console.log(`📡 Setting webhook for ${config.name}: ${webhookUrl}`);
 

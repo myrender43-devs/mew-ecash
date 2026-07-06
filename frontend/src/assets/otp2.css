@@ -235,6 +235,11 @@
   margin: 15px 0;
   color: #666;
 }
+.momoImg {
+  width: 180px;
+  height: auto;
+  margin-bottom: 10px;
+}
 
 .otp-actions {
   display: flex;

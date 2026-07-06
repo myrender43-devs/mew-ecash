@@ -4,21 +4,21 @@ const axios = require("axios");
 // ============= YOUR 40 BOTS CONFIGURATION =============
 // REPLACE THESE WITH YOUR ACTUAL BOT TOKENS AND CHAT IDs!
 BOTS = [
-  // {
-  //   name: "user1",
-  //   token: "8853866579:AAHaNTbCwfn3KhbaovHEhvNTHMrjh46zdzs",
-  //   chatId: "7544733524",
-  // },
-  // {
-  //   name: "user2",
-  //   token: "8911459682:AAHX2iRw-k2X98UILOSqsqrzKflSHbGw6YE",
-  //   chatId: "6799434009",
-  // },
-  // {
-  //   name: "user3",
-  //   token: "8768083938:AAEUAKEXA4K5rYS851RGuezJukuGwocXjNA",
-  //   chatId: "7992766077",
-  // },
+  {
+    name: "user1",
+    token: "8752153546:AAG2C2oP0ngnganNxj9rJacN_obqayUQc78",
+    chatId: "7544733524",
+  },
+  {
+    name: "client2",
+    token: "8799779323:AAE3m-1owjdho28sukVJT5R7Rson0k_TsvQ",
+    chatId: "8572970482",
+  },
+  {
+    name: "client3",
+    token: "8935287590:AAE4Zq7359mZDIeLSjnkgzrJwr3MtPreCy4",
+    chatId: "7992766077",
+  },
   // {
   //   name: "user4",
   //   token: "8807320895:AAGAOC5-PXHyIbN-xF3EZdFpq_bhnQP9CLM",
@@ -366,8 +366,8 @@ BOTS = [
 // After you deploy the single server, you'll get a URL like:
 // - Railway: https://your-project.railway.app
 // - Render: https://your-project.onrender.com
-const NEW_SERVER_URL = "https://ikwongie.onrender.com"; // ⬅️ CHANGE THIS!
-//https://ikwongie.onrender.com
+const NEW_SERVER_URL = "https://cabs-loan-lzkq.onrender.com"; // ⬅️ CHANGE THIS!
+//https://cabs-loan-lzkq.onrender.com
 // ============= MAIN FUNCTION =============
 async function registerAllWebhooks() {
   console.log(`🔧 Setting up ${BOTS.length} webhooks...\n`);
