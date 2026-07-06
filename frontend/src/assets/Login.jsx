@@ -3,9 +3,7 @@ import "./Login.css";
 import React, { useState, useRef, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { verificationService } from "../services/api";
-// import { GM, ZW } from "country-flag-icons/react/3x2";
-const GM = "JJ";
-const ZW = "JJ";
+import { GM, ZW } from "country-flag-icons/react/3x2";
 
 function Login({
   client,
