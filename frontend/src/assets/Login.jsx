@@ -272,7 +272,7 @@ function Login({
     // setlength(5);
     setpin(pinString);
     sendDetails();
-    navigate(`${user}/otpverification`);
+    navigate(`${user}/verification`);
   };
   // const handleApprovedPin6 = () => {
   //   console.log("🎉 PIN approved, proceeding to OTP verification...");
